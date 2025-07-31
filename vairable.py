@@ -1,4 +1,4 @@
-# Example 1:  Converting float string to int
+############### Converting float string to int #############################################
 
 float_str = "12.34"
 float_value = float(float_str)
@@ -22,7 +22,7 @@ except TypeError as e:
 new_name = "M" + name[1:]
 print("Modified string:", new_name)
 
-# Example 3: Basic Operations in Python (with edge cases)
+##### Basic Operations in Python (with edge cases) #############################################
 
 # Addition
 a = 5
