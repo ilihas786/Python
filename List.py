@@ -95,6 +95,7 @@ print("clear example:", copy_fruits) # Expected output: []
 
 # 12. sorted(): Returns a new sorted list from the elements of any iterable (does not modify the original list).
 numbers3 = [8, 2, 7, 3, 1]
+
 sorted_numbers = sorted(numbers3)
 sorted_numbers_desc = sorted(numbers3, reverse=True)
 print("sorted example (ascending):", sorted_numbers)      # Expected output: [1, 2, 3, 7, 8]
