@@ -1,5 +1,7 @@
 ###### Different Ways to Use Loops with Iterables in Python #####################
 
+# IMP: Python donot have do-while loops
+
 # 1. Looping through a list
 fruits = ['apple', 'banana', 'cherry']
 print('Looping through a list:')
