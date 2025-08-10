@@ -38,7 +38,18 @@ print("\nList Membership Examples:")
 print("3 in numbers:", 3 in numbers)        # True
 print("10 in numbers:", 10 in numbers)      # False
 print("5 not in numbers:", 5 not in numbers)  # False
+
+# Accessing both index and value in a list by enumerate()
+print("\nAccessing both index and value in a list:")
+my_list = ['a', 'b', 'c']
+for index, value in enumerate(my_list):
+	print(f"Index: {index}, Value: {value}")
 print("15 not in numbers:", 15 not in numbers) # True
+
+# Accessing both index and value in a list By zip():
+my_list = ['a', 'b', 'c']
+for index, value in zip(range(len(my_list)), my_list):
+    print(f"Index: {index}, Value: {value}")
 
 ############### Common List Methods in Python #######################################
 # Below are some of the most commonly used list methods, with definitions, examples, and expected outputs.
