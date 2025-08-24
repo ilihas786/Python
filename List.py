@@ -4,7 +4,7 @@ import copy
 # List slicing allows you to access a subset (slice) of a list using the syntax:
 #   list[start:stop:step]
 # - start: index to begin the slice (inclusive, default 0)
-# - stop: index to end the slice (exclusive, default end of list)
+# - stop: index to end the slice (actually it takes end-1 i.e (start,end-1))(exclusive, default end of list)
 # - step: interval between elements (default 1)
 #
 # Examples:
@@ -125,7 +125,7 @@ print("split example:", split_list)  # Expected output: ['apple', 'banana', 'che
 # Shallow Copy:
 # - A shallow copy creates a new list object, but does not create copies of the objects inside the list.
 # - If the list contains mutable objects (like other lists), both the original and the copy will reference the same inner objects.
-#
+# - So both lists will reflect changes made to these inner objects.
 # Example:
 nested = [[1, 2], [3, 4]]
 shallow = nested.copy()
@@ -143,7 +143,7 @@ print("original after deep copy change:", b)  # Expected output: [1, 2, 3, 4, 5]
 # Deep Copy:
 # - A deep copy creates a new list and recursively copies all objects inside the list.
 # - Changes to the deep copy do not affect the original list, even for nested objects.
-#
+# - so both lists will not reflect changes made to these inner objects.
 # Example:
 deep = copy.deepcopy(nested)
 deep[0][0] = 42
